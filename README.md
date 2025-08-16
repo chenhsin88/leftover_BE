@@ -77,22 +77,29 @@
 <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/81e0deb3-a487-4786-b1a6-5caca8bb3b05" />
 
 ### ◆ 定位功能
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/0d1e0a21-04b1-4d1a-b07c-85152f69f0a2" />
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/0d1e0a21-04b1-4d1a-b07c-85152f69f0a2" />
 
-### ◆ 管理者-新增、編輯題目
+### ◆ 前台-推播列表
+<img width="300" height="200" alt="image" src="(https://github.com/user-attachments/assets/d87c293d-19dc-47ed-bc98-4cf47e9536e8" />
 
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/ccb7a90c-6a47-49d9-a478-4653f33bbfa6" />
+### ◆ 前台-剩食商品(列表模式)
+<img width="300" height="200" alt="localhost_4200_result_feedbackList_id=1" src="https://github.com/user-attachments/assets/585c4c3f-fc7a-4d59-bc89-4db3c297dfb2" />
 
-### ◆ 管理者-問卷填寫記錄列表
-<img width="360" height="300" alt="localhost_4200_result_feedbackList_id=1" src="https://github.com/user-attachments/assets/9003810a-8cfb-49f1-8158-717dc9147e9e" />
+### ◆ 前台-剩食商品、商家(地圖模式)
+<img width="300" height="200" alt="1" src="https://github.com/user-attachments/assets/609cf937-979f-41bf-a1bc-96dd3e820936" />
 
-### ◆ 管理者-查看使用者填答紀錄
-<img width="300" height="450" alt="1" src="https://github.com/user-attachments/assets/caccddd5-1c97-4388-838b-177bcc47c041" />
+### ◆ 後台-商家管理
+<img width="300" height="200" alt="localhost_4200_result_count_id=1" src="https://github.com/user-attachments/assets/524850aa-dab4-4fb0-99c6-482f2dbec3d8" />
 
-### ◆ 用戶/管理者-統計圖表頁面
-<img width="300" height="450" alt="localhost_4200_result_count_id=1" src="https://github.com/user-attachments/assets/62c0d118-fa7a-429c-9e49-7b0978526fb6" />
+### ◆ 後台-商品管理
+<img width="300" height="200" alt="localhost_4200_answer_id=2" src="https://github.com/user-attachments/assets/00cc979e-a8cf-4a64-a24c-5b494d2f0563" />
 
-### ◆ 用戶-作答頁面
-<img width="300" height="450" alt="localhost_4200_answer_id=2" src="https://github.com/user-attachments/assets/45bdaa8d-e343-40b1-9b49-18c95e777d2d" />
+### ◆ 後台-訂單管理
+<img width="300" height="200" alt="localhost_4200_answer_id=2" src="https://github.com/user-attachments/assets/e83c50ea-ee3d-4680-926d-c21d9a6c90a2" />
 
+### ◆ 後台-營收統計
+<img width="300" height="200" alt="localhost_4200_answer_id=2" src="https://github.com/user-attachments/assets/318f0d0f-7db1-46af-9db7-0b82c15ba08c" />
+
+### ◆ 後台-評論管理
+<img width="300" height="200" alt="localhost_4200_answer_id=2" src="https://github.com/user-attachments/assets/c1e6d264-923e-420c-b5c7-a4a01b129f96" />
 
