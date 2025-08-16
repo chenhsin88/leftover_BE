@@ -73,13 +73,13 @@
 
 ## 畫面示意
 
-### ◆ 管理者-問卷列表
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/81e0deb3-a487-4786-b1a6-5caca8bb3b05" />
+### ◆ 平台首頁
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/81e0deb3-a487-4786-b1a6-5caca8bb3b05" />
 
-### ◆ 管理者-新增、編輯問卷
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/f37493a6-e9a1-47cf-b9a7-eebbe7f302c9" />
+### ◆ 定位功能
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/0d1e0a21-04b1-4d1a-b07c-85152f69f0a2" />
 
-### ◆ 管理者-新增、編輯題目![S__62660776_0](https://github.com/user-attachments/assets/81e0deb3-a487-4786-b1a6-5caca8bb3b05)
+### ◆ 管理者-新增、編輯題目
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/ccb7a90c-6a47-49d9-a478-4653f33bbfa6" />
 
