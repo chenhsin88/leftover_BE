@@ -80,7 +80,7 @@
 <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/0d1e0a21-04b1-4d1a-b07c-85152f69f0a2" />
 
 ### ◆ 前台-推播列表
-<img width="300" height="200" alt="image" src="(https://github.com/user-attachments/assets/d87c293d-19dc-47ed-bc98-4cf47e9536e8" />
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/d87c293d-19dc-47ed-bc98-4cf47e9536e8" />
 
 ### ◆ 前台-剩食商品(列表模式)
 <img width="300" height="200" alt="localhost_4200_result_feedbackList_id=1" src="https://github.com/user-attachments/assets/585c4c3f-fc7a-4d59-bc89-4db3c297dfb2" />
