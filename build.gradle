@@ -1,0 +1,42 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.5.0'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// jpa
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// mysql connector
+	implementation 'com.mysql:mysql-connector-j'
+	// security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	// openAPI: 後面要加上版本號  http://localhost:8080/swagger-ui/index.html  線上API文件可以在這網址看到自己的API
+	implementation 'com.mysql:mysql-connector-j:8.4.0' 
+	
+	implementation 'com.auth0:java-jwt:4.4.0'
+	
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	
+    
+    
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

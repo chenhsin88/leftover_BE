@@ -1,0 +1,124 @@
+diff a/src/main/java/com/example/leftovers/controller/PaymentController.java b/src/main/java/com/example/leftovers/controller/PaymentController.java	(rejected hunks)
+@@ -89,62 +89,62 @@
+ 	
+-//	@PostMapping("/return")
+-//	public String handlePaymentReturn(@RequestParam Map<String, String> params) {
+-//	    try {
+-//	        // 1. 檢查藍新回傳的付款狀態
+-//	        String status = params.get("Status");
+-//	        if (!"SUCCESS".equals(status)) {
+-//	            return "redirect:http://localhost:4200/paymentResult?status=fail&reason=payment_status_not_success";
+-//	        }
+-//
+-//	        // 2. 取得並解密 TradeInfo
+-//	        String encryptedTradeInfo = params.get("TradeInfo");
+-//	        String decrypted = PaymentUtils.decryptAES256(
+-//	            encryptedTradeInfo,
+-//	            PaymentConstants.HASH_KEY,
+-//	            PaymentConstants.HASH_IV
+-//	        );
+-//	        System.out.println("解密後 TradeInfo: " + decrypted);
+-////	        如果長得像 key1=value1&key2=value2 就是 Query String 格式。
+-////	        如果是 {"key1":"value1","key2":"value2"} 就是 JSON 格式。
+-//	        
+-//	        // 3. 將解密後的資料轉成 Map（格式 key=value&key2=value2）
+-//	        Map<String, String> tradeInfoMap = Arrays.stream(decrypted.split("&"))
+-//	            .map(s -> s.split("=", 2))
+-//	            .collect(Collectors.toMap(
+-//	                arr -> arr[0],
+-//	                arr -> URLDecoder.decode(arr.length > 1 ? arr[1] : "", StandardCharsets.UTF_8)
+-//	            ));
+-//
+-//	        // 4. 取得訂單編號（假設是純數字字串）
+-//	        String merchantOrderNo = tradeInfoMap.get("MerchantOrderNo");
+-//
+-//	        // 5. 字串轉 int（若格式不符，會拋例外）
+-//	        int orderId = Integer.parseInt(merchantOrderNo);
+-//
+-//	        // 6. 查詢訂單並更新狀態
+-//	        Optional<Orders> orderOpt = orderDao.findByOrderId(orderId);
+-//	        if (orderOpt.isPresent()) {
+-//	            Orders order = orderOpt.get();
+-//
+-//	            // 防止重複更新
+-//	            if (!"PAID".equals(order.getStatus())) {
+-//	                order.setStatus("PAID");
+-//	                order.setUpdatedAt(LocalDateTime.now());
+-//	                orderDao.save(order);
+-//	            }
+-//
+-//	            return "redirect:http://localhost:4200/paymentResult?status=success&orderNo=" + merchantOrderNo;
+-//	        } else {
+-//	            return "redirect:http://localhost:4200/paymentResult?status=fail&reason=order_not_found";
+-//	        }
+-//
+-//	    } catch (NumberFormatException nfe) {
+-//	        // merchantOrderNo 不是純數字，解析失敗
+-//	        nfe.printStackTrace();
+-//	        return "redirect:http://localhost:4200/paymentResult?status=fail&reason=invalid_order_number";
+-//	    } catch (Exception e) {
+-//	        e.printStackTrace();
+-//	        return "redirect:http://localhost:4200/paymentResult?status=fail&reason=internal_server_error";
+-//	    }
+-//	}
++	@PostMapping("/return")
++	public String handlePaymentReturn(@RequestParam Map<String, String> params) {
++	    try {
++	        // 1. 檢查藍新回傳的付款狀態
++	        String status = params.get("Status");
++	        if (!"SUCCESS".equals(status)) {
++	            return "redirect:http://localhost:4200/paymentResult?status=fail&reason=payment_status_not_success";
++	        }
++
++	        // 2. 取得並解密 TradeInfo
++	        String encryptedTradeInfo = params.get("TradeInfo");
++	        String decrypted = PaymentUtils.decryptAES256(
++	            encryptedTradeInfo,
++	            PaymentConstants.HASH_KEY,
++	            PaymentConstants.HASH_IV
++	        );
++	        System.out.println("解密後 TradeInfo: " + decrypted);
++//	        如果長得像 key1=value1&key2=value2 就是 Query String 格式。
++//	        如果是 {"key1":"value1","key2":"value2"} 就是 JSON 格式。
++	        
++	        // 3. 將解密後的資料轉成 Map（格式 key=value&key2=value2）
++	        Map<String, String> tradeInfoMap = Arrays.stream(decrypted.split("&"))
++	            .map(s -> s.split("=", 2))
++	            .collect(Collectors.toMap(
++	                arr -> arr[0],
++	                arr -> URLDecoder.decode(arr.length > 1 ? arr[1] : "", StandardCharsets.UTF_8)
++	            ));
++
++	        // 4. 取得訂單編號（假設是純數字字串）
++	        String merchantOrderNo = tradeInfoMap.get("MerchantOrderNo");
++
++	        // 5. 字串轉 int（若格式不符，會拋例外）
++	        int orderId = Integer.parseInt(merchantOrderNo);
++
++	        // 6. 查詢訂單並更新狀態
++	        Optional<Orders> orderOpt = orderDao.findByOrderId(orderId);
++	        if (orderOpt.isPresent()) {
++	            Orders order = orderOpt.get();
++
++	            // 防止重複更新
++	            if (!"PAID".equals(order.getStatus())) {
++	                order.setStatus("PAID");
++	                order.setUpdatedAt(LocalDateTime.now());
++	                orderDao.save(order);
++	            }
++
++	            return "redirect:http://localhost:4200/paymentResult?status=success&orderNo=" + merchantOrderNo;
++	        } else {
++	            return "redirect:http://localhost:4200/paymentResult?status=fail&reason=order_not_found";
++	        }
++
++	    } catch (NumberFormatException nfe) {
++	        // merchantOrderNo 不是純數字，解析失敗
++	        nfe.printStackTrace();
++	        return "redirect:http://localhost:4200/paymentResult?status=fail&reason=invalid_order_number";
++	    } catch (Exception e) {
++	        e.printStackTrace();
++	        return "redirect:http://localhost:4200/paymentResult?status=fail&reason=internal_server_error";
++	    }
++	}
+ 
