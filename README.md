@@ -1,13 +1,13 @@
 # Leftovers  剩食平台 X 食在不浪費
 
-「Leftovers」是一個向國外Too good To Go 致敬的剩食平台，旨在減少食物浪費，連結消費者、商家與 NGO，讓剩餘餐食能夠更有效率地被利用。  
+「Leftovers」是一個向國外Too good To Go 致敬的剩食平台，旨在減少食物浪費，連結消費者、商家，讓剩餘餐食能夠更有效率地被利用。  
 本專案採用 **Angular 17 前端** 與 **Spring Boot 後端（MySQL）**，並整合 **地圖服務 / 視覺動畫 / 自動化工作流 / 支付系統**。
 
 ---
 
 ## 專案功能
 
-### ◆ 前台使用者(買家)
+### ◆ 前台使用者(消者者)
 
 - 簡易會員註冊流程，包含google登入
 - 登入後即可定位，並根據定位推播附近商店、商品
@@ -15,12 +15,13 @@
 - 透過條件篩選或自訂公里數，以列表模式或地圖模式，查看商店、商品分佈地點
 - 加入購物車內，下單支援現金現場結帳及線上信用卡支付
 - 個人即時、歷史訂單管理和查看
+- 針對已完成訂單給店家評論
 - AI助理，協助搜尋及下單
 - 明暗模式
 - 個人資料修改
 - 小鈴鐺即時通知推播商品
 
-### ◆ 後台使用者(賣家)
+### ◆ 後台使用者(商家)
 
 - 簡易會員註冊流程
 - 建立商家
@@ -73,12 +74,13 @@
 ## 畫面示意
 
 ### ◆ 管理者-問卷列表
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/d7098d8d-cc79-4cde-8b89-4eea372b3b28" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/81e0deb3-a487-4786-b1a6-5caca8bb3b05" />
 
 ### ◆ 管理者-新增、編輯問卷
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/f37493a6-e9a1-47cf-b9a7-eebbe7f302c9" />
 
-### ◆ 管理者-新增、編輯題目
+### ◆ 管理者-新增、編輯題目![S__62660776_0](https://github.com/user-attachments/assets/81e0deb3-a487-4786-b1a6-5caca8bb3b05)
+
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/ccb7a90c-6a47-49d9-a478-4653f33bbfa6" />
 
 ### ◆ 管理者-問卷填寫記錄列表
